@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GameTECA</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <h1>🎮 GameTECA</h1>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showHome()">Início</a></li>
+                <li><a href="#" onclick="showAbout()">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        
+        <section id="about" class="hidden">
+            <h2>Sobre o site</h2>
+            <p>
+                A <strong>GameStore</strong> Aqui, você encontra os únicos 3 jogos que existem nos resto do mundo!!!! Aproveite. Contato: 99876543.
+            </p>
+            <button onclick="showHome()" class="back-button">⬅ Voltar</button>
+        </section>
+
+        
+        <section id="home" class="active">
+            <h2>🔥 Os únicos jogos do mundo 🔥</h2>
+            <div class="games-container">
+                <div class="game-card">
+                    <img src="https://image.api.playstation.com/vulcan/ap/rnd/202405/2216/881aeea06b117a39f1724a4d7ebf66b152a088475e4467e4.jpg" alt="Jogo 1" />
+                    <h3>🎮 Ação</h3>
+                    <p>R$ 777,77</p>
+                    <button onclick="addToCart('Jogo Aventura')">Comprar</button>
+                </div>
+                <div class="game-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/b/b6/Poppy_Playtime_cover.jpg" alt="Jogo 2" />
+                    <h3>😱 Terror</h3>
+                    <p>R$ 666,00</p>
+                    <button onclick="addToCart('Corrida Extrema')">Comprar</button>
+                </div>
+                <div class="game-card">
+                    <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/620/header.jpg?t=1745363004" alt="Jogo 3" />
+                    <h3>🧩 Puzzle</h3>
+                    <p>R$ aax,fr(tente descobrir o preço)</p>
+                    <button onclick="addToCart('Batalha Épica')">Comprar</button>
+                </div>
+            </div>
+        </section>
+
+
+        <div id="cart-message" class="hidden">Jogo adicionado ao carrinho! 🛒</div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 GameTECA. By: JP</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
